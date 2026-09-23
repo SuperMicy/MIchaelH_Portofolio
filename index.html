@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michael Hendrilie — Computer Science student at Binus University, exploring software engineering, data, and artificial intelligence.">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Michael Hendrilie — Software, Data & AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23162436'/%3E%3Ctext x='12' y='45' font-family='Arial' font-size='40' font-weight='700' fill='%2393d5c6'%3EM%3C/text%3E%3C/svg%3E">
+  <!-- Apply the saved preference before painting to avoid a theme flash. -->
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('michael-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Decorative layers never intercept clicks or enter the accessibility tree. -->
+  <div class="ambient-background" aria-hidden="true"><div class="mesh-layer mesh-light"></div><div class="mesh-layer mesh-dark"></div><div class="cursor-aura" id="cursor-aura"></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">Michael<span>.</span></a>
+      <div class="nav-links" id="navigation">
+        <a href="#home" class="active" aria-current="location">Home</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#achievement">Achievement</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode"><span data-icon="moon"></span></button><button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false"><span data-icon="menu"></span></button></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="hero-welcome"><p class="greeting"><span id="greeting-icon" aria-hidden="true"></span><span id="dynamic-greeting">Hello, welcome to my corner of the web.</span></p><button type="button" class="motion-toggle" id="motion-toggle" aria-pressed="false" title="Pause decorative animations">Pause effects</button></div>
+        <p class="eyebrow availability"><span></span> OPEN TO INTERNSHIP OPPORTUNITIES</p>
+        <h1 id="hero-title">Michael<br><span>Hendrilie</span><span class="title-dot">.</span></h1>
+        <p class="identity">NIM 2802435752 <span>|</span> Computer Science at Binus University</p>
+        <p class="hero-description">I turn curiosity into code. With a thoughtful approach to problem solving, I explore how well crafted software and intelligent systems can make everyday experiences better. My next chapter: building meaningful solutions in Software Engineering and AI.</p>
+        <div class="social-links"><a class="button primary" data-link="email" href="#contact"><span data-icon="mail"></span>Email me<span data-icon="arrow-up-right"></span></a><a class="button" data-link="github" href="#contact"><span data-icon="github"></span>GitHub</a><a class="button" data-link="linkedin" href="#contact"><span data-icon="linkedin"></span>LinkedIn</a></div>
+      </div>
+      <aside class="hero-note reveal" aria-label="My approach to technology">
+        <div class="note-top"><span class="monogram">MH</span><span>THE DEVELOPER'S MINDSET<br><strong>Always a work in progress.</strong></span></div>
+        <div class="code-title"><span data-icon="code"></span> a little about me.js</div>
+        <pre><code><span class="code-muted">// Curiosity, with a purpose.</span>
+<span class="code-accent">const</span> michael = {
+  focus: <span class="code-string">'Software & AI'</span>,
+  approach: [
+    <span class="code-string">'Understand the problem'</span>,
+    <span class="code-string">'Build with intention'</span>,
+    <span class="code-string">'Learn. Refine. Repeat.'</span>
+  ],
+  nextChapter: <span class="code-string">'An internship'</span>
+};</code></pre>
+        <div class="note-bottom"><span>THINK CLEARLY.</span><span>BUILD THOUGHTFULLY.</span></div>
+      </aside>
+      <div class="hero-bottom"><a href="#project">Explore my work <span data-icon="arrow-down"></span></a><span>SOFTWARE ENGINEERING <i>/</i> DATA <i>/</i> AI</span></div>
+    </section>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title"><div class="wrap">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / THE TOOLKIT</p><h2 id="skills-title">Ideas need the<br>right tools<span>.</span></h2></div><p>From the first interface to the intelligence behind it the technologies I work with.</p></div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div></section>
+    <section class="section wrap" id="project" aria-labelledby="project-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="project-title">Built to solve<span>.</span></h2></div><p>A space for experiments, thoughtful interfaces, and practical applications.</p></div>
+      <p class="content-note">Project examples — actual work and links coming soon.</p>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+    <section class="section achievement-section" id="achievement" aria-labelledby="achievement-title"><div class="wrap achievement-layout">
+      <div class="reveal"><p class="eyebrow">03 / CONTINUOUS LEARNING</p><h2 id="achievement-title">Stay curious.<br>Keep growing<span>.</span></h2><p class="section-description">Every new skill is another way to approach a problem. A place for my bootcamp milestones and certificates.</p></div>
+      <div class="certificate reveal"><div class="certificate-icon"><span data-icon="award"></span></div><div><p class="eyebrow">BOOTCAMP / CERTIFICATE PLACEHOLDER</p><h3 id="certificate-title">Bootcamp certificate</h3><p id="certificate-description">Certificate details will be added here, including the program, provider, and practical skills gained.</p><a class="text-link" id="certificate-link" href="#achievement"><span data-icon="file"></span>View Certificate<span data-icon="arrow-up-right"></span></a></div></div>
+    </div></section>
+    <section class="section wrap contact-layout" id="contact" aria-labelledby="contact-title">
+      <div class="reveal"><p class="eyebrow">04 / THE NEXT CHAPTER</p><h2 id="contact-title">Ready to<br>Innovate<br><em>Together?</em></h2><p class="section-description">Actively looking and open to Software Engineering Internship (Frontend/Backend), Data Analyst, and AI/ML roles.</p><div class="contact-signoff"><span class="short-line"></span>Great things start with a conversation.</div></div>
+      <form class="contact-form reveal" id="contact-form"><div class="form-top"><h3>Let's start a conversation.</h3><span data-icon="arrow-up-right"></span></div><label for="name">Name</label><input id="name" name="name" placeholder="Your name" autocomplete="name" maxlength="100" required><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" maxlength="254" required><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your opportunity…" minlength="10" maxlength="3000" required></textarea><button type="submit" class="button primary">Submit message<span data-icon="arrow-up-right"></span></button><p class="form-help">I look forward to hearing good news from you.</p><p id="form-status" class="form-status" role="status"></p></form>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#home">Michael<span>.</span></a><p>Thoughtfully built. Always evolving.</p></div><p class="copyright">© <span id="year"></span> Michael Hendrilie</p><div class="clock"><span class="eyebrow">YOUR LOCAL TIME <span data-icon="clock"></span></span><time id="local-clock">--:--:--</time><span id="time-zone"></span></div></div></footer>
+  <button class="back-top icon-button" type="button" aria-label="Back to top" inert><span data-icon="arrow-up"></span></button>
+  <dialog id="link-dialog" aria-labelledby="dialog-title"><button class="dialog-close icon-button" aria-label="Close dialog"><span data-icon="close"></span></button><p class="eyebrow">A LITTLE MORE TO COME</p><h3 id="dialog-title">This link is coming soon.</h3><p id="dialog-message"></p><button class="button primary dialog-dismiss" type="button">Got it</button></dialog>
+  <noscript><p class="noscript">Please enable JavaScript for project details, the theme switch, and contact form. The page remains available to browse.</p></noscript>
+</body>
+</html>
